@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,10 @@
     <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap.min.css')}}">
     <title>Document</title>
 </head>
+
 <body>
-    {{ View::make('header') }}
-    @yield('content')
-    {{ View::make('footer') }}
-    
+    {{ View::make('header') }} @yield('content') {{ View::make('footer') }}
+
 
 
 
@@ -19,9 +19,22 @@
     <script src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
 </body>
 <style>
-    .custom-login{
+    .custom-login {
         height: 500px;
         padding-top: 100px
     }
+    
+    .slider-img {
+        height: 400px!important;
+    }
+    
+    .custom-product {
+        height: 600px;
+    }
+    
+    .slider-text {
+        background-color: rgba(71, 33, 33, 0.7);
+    }
 </style>
+
 </html>
